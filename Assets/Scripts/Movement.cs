@@ -46,16 +46,18 @@ public class Movement : MonoBehaviour
 
         if (rotationInput < 0f)
         {
-            ApplyRotation(rotationInput);
+            ApplyRotation(-rotationInput);
         }
         else if (rotationInput > 0f)
         {
-            ApplyRotation(rotationInput);
+            ApplyRotation(-rotationInput);
         }
     }
 
     private void ApplyRotation(float rotationThisFrame)
     {
+        rb.freezeRotation = true;
         transform.Rotate(Vector3.forward * rotationThisFrame * rotationStrength * Time.fixedDeltaTime);
+        rb.freezeRotation = false;
     }
 }
