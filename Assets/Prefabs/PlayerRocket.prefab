@@ -138,8 +138,8 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
     m_Priority: 0
-  thrustStrength: 1000
-  rotationStrength: 100
+  thrustStrength: 1500
+  rotationStrength: 150
   audioSource: {fileID: 5858548200558535715}
   mainEngineSFX: {fileID: 8300000, guid: c162e22e1c0a33a46a9dbb219a5c0c88, type: 3}
   mainEngineParticles: {fileID: 4900168630944058400}
